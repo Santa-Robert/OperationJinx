@@ -1,0 +1,10 @@
+John Doe,male,johndoe@gmail.com
+Jane Smith,female,janesmith@gmail.com
+Michael Brown,male,michaelbrown@gmail.com
+Emily Davis,female,emilydavis@gmail.com
+William Johnson,male,williamjohnson@gmail.com
+Olivia Martinez,female,oliviamartinez@gmail.com
+James Wilson,male,jameswilson@gmail.com
+Sophia Taylor,female,sophiataylor@gmail.com
+Daniel Anderson,male,danielanderson@gmail.com
+Emma Clark,female,emmaclark@gmail.com
