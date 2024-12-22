@@ -129,15 +129,15 @@ void readFile();
 
 int main() {
 
-   //
-   //  userStruct user;
-   //
-   //  
-   //
-   // createFile(user);
-   // mainData(user.name, user.money, user.age, user.gender, tableHeader(user) );
-   //
-   //  readFile();
+   
+    userStruct user;
+   
+    
+   
+   createFile(user);
+   mainData(user.name, user.money, user.age, user.gender, tableHeader(user) );
+   
+    readFile();
 
     cout<<userTable()<<endl;
 
