@@ -204,17 +204,40 @@ void createFile(userStruct user) {
     
 }
 
+// void loopCounting(userStruct user, string MyText)
+// {
+//     int loopCount = 0;
+//
+//     stringstream ss(MyText);
+//     while (getline(ss, MyText, ',')) {
+//
+//         if (loopCount == 0) {
+//
+//             user.name = MyText;
+//         } else if (loopCount == 1) {
+//
+//             user.gender = MyText;
+//         } else if (loopCount == 2) {
+//
+//             user.email = MyText;
+//         }
+//         if (loopCount > 2) {
+//             loopCount = 0;
+//         }
+//         loopCount++;
+//
+//     }
+// }
 
 void readFile() {
 
     userStruct user;
 
 int userCounter = 0;
-    int loopCount = 0;
-
+    
     userStruct clients[10] ;
 
-
+    int loopCount = 0;
 
     string myText;
 
@@ -223,9 +246,11 @@ int userCounter = 0;
     
 
     while (getline(MyReadFile, myText)) {
-        loopCount = 0;
-
         stringstream ss(myText);
+        
+        // loopCounting(user, myText);
+
+       
         while (getline(ss, myText, ',')) {
 
             if (loopCount == 0) {
@@ -244,7 +269,7 @@ int userCounter = 0;
             loopCount++;
 
         }
-       
+        
         clients[userCounter] = user;
         userCounter++;
     }
