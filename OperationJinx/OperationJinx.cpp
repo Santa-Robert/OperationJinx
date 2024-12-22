@@ -204,30 +204,35 @@ void createFile(userStruct user) {
     
 }
 
-// void loopCounting(userStruct user, string MyText)
-// {
-//     int loopCount = 0;
-//
-//     stringstream ss(MyText);
-//     while (getline(ss, MyText, ',')) {
-//
-//         if (loopCount == 0) {
-//
-//             user.name = MyText;
-//         } else if (loopCount == 1) {
-//
-//             user.gender = MyText;
-//         } else if (loopCount == 2) {
-//
-//             user.email = MyText;
-//         }
-//         if (loopCount > 2) {
-//             loopCount = 0;
-//         }
-//         loopCount++;
-//
-//     }
-// }
+userStruct loopCounting(userStruct user, string MyText)
+{
+
+    int loopCount = 0;
+    
+
+    stringstream ss(MyText);
+    while (getline(ss, MyText, ',')) {
+
+        if (loopCount == 0) {
+
+            user.name = MyText;
+        } else if (loopCount == 1) {
+
+            user.gender = MyText;
+        } else if (loopCount == 2) {
+
+            user.email = MyText;
+        }
+        if (loopCount > 2) {
+            loopCount = 0;
+        }
+        loopCount++;
+
+    }
+
+    return user;
+    
+}
 
 void readFile() {
 
@@ -243,32 +248,14 @@ int userCounter = 0;
 
 
     ifstream MyReadFile("C:\\Users\\santa\\source\\repos\\OperationJinx\\OperationJinx\\dataBase\\json.txt");
+
     
 
     while (getline(MyReadFile, myText)) {
-        stringstream ss(myText);
-        
-        // loopCounting(user, myText);
-
        
-        while (getline(ss, myText, ',')) {
-
-            if (loopCount == 0) {
-
-                user.name = myText;
-            } else if (loopCount == 1) {
-
-                user.gender = myText;
-            } else if (loopCount == 2) {
-
-                user.email = myText;
-            }
-            if (loopCount > 2) {
-                loopCount = 0;
-            }
-            loopCount++;
-
-        }
+        
+        user = loopCounting(user, myText);
+       
         
         clients[userCounter] = user;
         userCounter++;
