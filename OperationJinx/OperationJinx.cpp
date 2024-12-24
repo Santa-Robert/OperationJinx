@@ -139,9 +139,9 @@ int main() {
    //
    //  readFile();
    //
-   cout<<userTable()<<endl;
+   userTable();
 
-};
+}
 
 void mainData(string name,
               string money,
