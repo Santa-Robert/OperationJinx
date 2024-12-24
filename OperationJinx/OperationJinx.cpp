@@ -125,7 +125,7 @@ countOfTheRow tableHeader(userStruct user) {
 
 void createFile(userStruct user);
 
-void readFile();
+userStruct* readFile();
 
 string ageGenerator()
 {
@@ -147,24 +147,28 @@ string moneyGenerator()
 
 int main() {
 
-   //
-   //  userStruct user;
-   //
-   //  
-   //
-   // // createFile(user);
-   // mainData(user.name, user.money, user.age, user.gender, tableHeader(user) );
-   //
-   //  readFile();
-   //
+    int Age = 0;
+    userStruct* vec = readFile();
 
-    string age = ageGenerator();
-    string money = moneyGenerator();
+   
     
-   userTable("Robi",money,age,"male","santarobert@gmail.com");
+    
+    
+    
+    
+    
 
-    // cout<<ageGenerator()<<endl;
-    // cout<<moneyGenerator();
+    
+    userTableHeader();
+    cout<<endl;
+    for (int i = 0; i<10; i++)
+    {
+        userTable(vec[i].name,moneyGenerator(),ageGenerator(),vec[i].gender,vec[i].email);
+    }
+   
+    
+    
+    
 }
 
 void mainData(string name,
@@ -258,43 +262,22 @@ userStruct loopCounting(userStruct user, string MyText)
     
 }
 
-void readFile() {
-
+userStruct* readFile() {
+    userStruct* clients = new userStruct[10]; // Dynamically allocate memory for 10 userStruct objects
     userStruct user;
-
-int userCounter = 0;
-    
-    userStruct clients[10] ;
-
-    // int loopCount = 0;
+    int userCounter = 0;
 
     string myText;
-
-
     ifstream MyReadFile("C:\\Users\\santa\\source\\repos\\OperationJinx\\OperationJinx\\dataBase\\json.txt");
 
     
 
-    while (getline(MyReadFile, myText)) {
-       
-        
+    while (getline(MyReadFile, myText) && userCounter < 10) {
         user = loopCounting(user, myText);
-       
-        
         clients[userCounter] = user;
         userCounter++;
     }
 
-    for (int i = 0; i < 10; ++i) {
-        cout<<"name:"<<clients[i].name<<" ";
-        cout<<"gender:"<<clients[i].gender<<" ";
-        cout<<"email:"<<clients[i].email<<" ";
-        cout<<endl;
-    }
-
-
-
     MyReadFile.close();
-
-
+    return clients; // Return pointer to the array
 }
