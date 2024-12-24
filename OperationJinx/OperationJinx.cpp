@@ -127,22 +127,22 @@ void createFile(userStruct user);
 
 void readFile();
 
-int ageGenerator()
+string ageGenerator()
 {
     int age = 0;
 
     age=randomizer(18,100);
 
-    return age;
+    return std::to_string(age);
 }
 
-int moneyGenerator()
+string moneyGenerator()
 {
     int money = 0;
 
     money=randomizer(100,120000);
 
-    return money;
+    return std::to_string(money);
 }
 
 int main() {
@@ -157,10 +157,14 @@ int main() {
    //
    //  readFile();
    //
-   userTable();
 
-    cout<<ageGenerator()<<endl;
-    cout<<moneyGenerator();
+    string age = ageGenerator();
+    string money = moneyGenerator();
+    
+   userTable("Robi",money,age,"male","santarobert@gmail.com");
+
+    // cout<<ageGenerator()<<endl;
+    // cout<<moneyGenerator();
 }
 
 void mainData(string name,

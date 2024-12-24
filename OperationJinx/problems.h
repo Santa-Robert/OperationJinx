@@ -10,6 +10,6 @@
 using namespace std;
 
 int digLen(int x = 0);
-void userTable();
+void userTable(string clName, string clMoney, string clAge, string clGender, string clEmail);
 int sec(float x);
 int randomizer(int min, int max);

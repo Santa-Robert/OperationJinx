@@ -16,7 +16,7 @@ void data(string name ,
 
 
 
-void userTable() {
+void userTable(string clName, string clMoney, string clAge, string clGender, string clEmail) {
 
     int n = 40;
     int x = n;
@@ -117,10 +117,10 @@ void userTable() {
 
     
     cout<<endl;
-    data("Paul Eminescu", "12", "61", "Male","sophiataylor@gmail.com", nameCount, moneyCount, ageCount, genderCount,emailCount);
-    data("Paul Jake", "12", "61", "Male","danielanderson@gmail.com", nameCount, moneyCount, ageCount, genderCount,emailCount);
-    data("Rob", "12", "61", "Male","jameswilson@gmail.com", nameCount, moneyCount, ageCount, genderCount,emailCount);
-    data("Huber Blaine Wolf", "12", "61", "Male","michaelbrown@gmail.com", nameCount, moneyCount, ageCount, genderCount,emailCount);
+    data(clName, clMoney, clAge, clGender,clEmail, nameCount, moneyCount, ageCount, genderCount,emailCount);
+    // data("Paul Jake", "12", "61", "Male","danielanderson@gmail.com", nameCount, moneyCount, ageCount, genderCount,emailCount);
+    // data("Rob", "12", "61", "Male","jameswilson@gmail.com", nameCount, moneyCount, ageCount, genderCount,emailCount);
+    // data("Huber Blaine Wolf", "12", "61", "Male","michaelbrown@gmail.com", nameCount, moneyCount, ageCount, genderCount,emailCount);
   
     
 
