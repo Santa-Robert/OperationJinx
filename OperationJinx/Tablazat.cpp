@@ -16,7 +16,7 @@ void data(string name ,
 
 
 
-int userTable() {
+void userTable() {
 
     int n = 40;
     int x = n;
@@ -122,7 +122,7 @@ int userTable() {
     data("Rob", "12", "61", "Male","jameswilson@gmail.com", nameCount, moneyCount, ageCount, genderCount,emailCount);
     data("Huber Blaine Wolf", "12", "61", "Male","michaelbrown@gmail.com", nameCount, moneyCount, ageCount, genderCount,emailCount);
   
-    return 1;
+    
 
 }
 
