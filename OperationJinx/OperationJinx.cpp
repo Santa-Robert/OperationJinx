@@ -129,17 +129,17 @@ void readFile();
 
 int main() {
 
-   
-    userStruct user;
-   
-    
-   
-   createFile(user);
-   mainData(user.name, user.money, user.age, user.gender, tableHeader(user) );
-   
-    readFile();
-
-    cout<<userTable()<<endl;
+   //
+   //  userStruct user;
+   //
+   //  
+   //
+   // // createFile(user);
+   // mainData(user.name, user.money, user.age, user.gender, tableHeader(user) );
+   //
+   //  readFile();
+   //
+   cout<<userTable()<<endl;
 
 };
 
@@ -242,7 +242,7 @@ int userCounter = 0;
     
     userStruct clients[10] ;
 
-    int loopCount = 0;
+    // int loopCount = 0;
 
     string myText;
 
