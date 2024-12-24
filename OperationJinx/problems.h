@@ -12,4 +12,4 @@ using namespace std;
 int digLen(int x = 0);
 void userTable();
 int sec(float x);
-void randomizer(int min, int max);
+int randomizer(int min, int max);
