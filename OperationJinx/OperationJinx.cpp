@@ -127,6 +127,24 @@ void createFile(userStruct user);
 
 void readFile();
 
+int ageGenerator()
+{
+    int age = 0;
+
+    age=randomizer(18,100);
+
+    return age;
+}
+
+int moneyGenerator()
+{
+    int money = 0;
+
+    money=randomizer(100,120000);
+
+    return money;
+}
+
 int main() {
 
    //
@@ -141,6 +159,8 @@ int main() {
    //
    userTable();
 
+    cout<<ageGenerator()<<endl;
+    cout<<moneyGenerator();
 }
 
 void mainData(string name,
