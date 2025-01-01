@@ -60,12 +60,13 @@ void userTableHeader()
     cout<<"Email";
     for (int i = 0; i < n; i++) {
         cout<<" ";
-        if(i+1 == 39)
+        if(i+1 == 35)
         {
             cout<<"|";
             break;
         }
     }
+    
 }
 
 void userTable(string clName, string clMoney, string clAge, string clGender, string clEmail) {
@@ -193,7 +194,7 @@ void data(string name ,
             break;
         }
     }
-    cout<<endl;
+   //cout<<endl;
 
 }
 

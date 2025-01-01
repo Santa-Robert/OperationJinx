@@ -163,7 +163,7 @@ int main() {
     cout<<endl;
     for (int i = 0; i<10; i++)
     {
-        userTable("Robi","1232121","13", "male", "robika@gmail.com");
+       userTable(vec[i].name,moneyGenerator(),ageGenerator(),vec[i].gender,vec[i].email);
     }
    
     
