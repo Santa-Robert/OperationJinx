@@ -189,7 +189,7 @@ void data(string name ,
     cout<<email;
     for (int i = 0; i < n; i++) {
         cout << " ";
-        if (i + 1 == countEmail - email.size() + 39) { 
+        if (i + 1 == countEmail - email.size()) { 
             cout << "|";
             break;
         }
