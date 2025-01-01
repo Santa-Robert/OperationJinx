@@ -60,7 +60,7 @@ void userTableHeader()
     cout<<"Email";
     for (int i = 0; i < n; i++) {
         cout<<" ";
-        if(i+1 == 40)
+        if(i+1 == 39)
         {
             cout<<"|";
             break;
@@ -77,50 +77,7 @@ void userTable(string clName, string clMoney, string clAge, string clGender, str
     string age = "Age";
     string gender = "Gender";
     string email = "Email";
-    //
-    // cout<<name;
-    // for (int i = 0; i < n; i++) {
-    //     cout<<" ";
-    //     if(i+1 == 15){
-    //         cout<<"|";
-    //         break;
-    //     }
-    // }
-    // cout<<"Money";
-    // for (int i = 0; i < n; i++) {
-    //     cout<<" ";
-    //     if(i+1 == 15){
-    //         cout<<"|";
-    //         break;
-    //     }
-    // }
-    // cout<<"Age";
-    // for (int i = 0; i < n; i++) {
-    //     cout<<" ";
-    //     if(i+1 == 5){
-    //         cout<<"|";
-    //         break;
-    //     }
-    // }
-    // cout<<"Gender";
-    // for (int i = 0; i < n; i++) {
-    //     cout<<" ";
-    //     if (i+1 == 8)
-    //     {
-    //         cout<<"|";
-    //         break;
-    //     }
-    // }
-    // cout<<"Email";
-    // for (int i = 0; i < n; i++) {
-    //     cout<<" ";
-    //     if(i+1 == 35)
-    //     {
-    //         cout<<"|";
-    //         break;
-    //     }
-    // }
-    //
+   
     cout<<endl;
     int nameCount = 0;
     int moneyCount = 0;
@@ -163,7 +120,7 @@ void userTable(string clName, string clMoney, string clAge, string clGender, str
     for (int i = 0; i < n; i++) {
         cout<<"-";
         emailCount++;
-        if (i+1 == gender.size() + 50)
+        if (i+1 == email.size() + 39)
         {
             cout<<"+";
             break;
@@ -231,7 +188,7 @@ void data(string name ,
     cout<<email;
     for (int i = 0; i < n; i++) {
         cout << " ";
-        if (i + 1 == countEmail - email.size() + 50) { // Updated to 50
+        if (i + 1 == countEmail - email.size() + 39) { 
             cout << "|";
             break;
         }
