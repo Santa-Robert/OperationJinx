@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\santa\\source\\repos\\OperationJinx\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{49FC87A9-6162-462B-8435-5E89E7E213C0}|OperationJinx\\OperationJinx.vcxproj|C:\\Users\\santa\\source\\repos\\OperationJinx\\OperationJinx\\Tablazat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{49FC87A9-6162-462B-8435-5E89E7E213C0}|OperationJinx\\OperationJinx.vcxproj|solutionrelative:OperationJinx\\Tablazat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{49FC87A9-6162-462B-8435-5E89E7E213C0}|OperationJinx\\OperationJinx.vcxproj|C:\\Users\\santa\\source\\repos\\OperationJinx\\OperationJinx\\OperationJinx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{49FC87A9-6162-462B-8435-5E89E7E213C0}|OperationJinx\\OperationJinx.vcxproj|solutionrelative:OperationJinx\\OperationJinx.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -19,19 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Tablazat.cpp",
+              "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\OperationJinx\\OperationJinx\\Tablazat.cpp",
+              "RelativeDocumentMoniker": "OperationJinx\\Tablazat.cpp",
+              "ToolTip": "C:\\Users\\santa\\source\\repos\\OperationJinx\\OperationJinx\\Tablazat.cpp*",
+              "RelativeToolTip": "OperationJinx\\Tablazat.cpp*",
+              "ViewState": "AgIAADkAAAAAAAAAAAAowFEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-01T12:52:22.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "OperationJinx.cpp",
               "DocumentMoniker": "C:\\Users\\santa\\source\\repos\\OperationJinx\\OperationJinx\\OperationJinx.cpp",
               "RelativeDocumentMoniker": "OperationJinx\\OperationJinx.cpp",
               "ToolTip": "C:\\Users\\santa\\source\\repos\\OperationJinx\\OperationJinx\\OperationJinx.cpp",
               "RelativeToolTip": "OperationJinx\\OperationJinx.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-21T07:21:46.404Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
